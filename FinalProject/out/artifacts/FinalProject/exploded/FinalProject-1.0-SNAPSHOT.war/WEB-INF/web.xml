@@ -1,0 +1,403 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>Logic.Registration</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Logic.Registration</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Autorization</servlet-name>
+        <servlet-class>Logic.Autorization</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Autorization</servlet-name>
+        <url-pattern>/Logic.Autorization</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+    <!--<filter>-->
+        <!--<filter-name>FilterAccess</filter-name>-->
+        <!--<filter-class>FilterAccess</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>FilterAccess</filter-name>-->
+        <!--<url-pattern>/</url-pattern>-->
+    <!--</filter-mapping>-->
+
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+
+
+
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Logic.Logout</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logic.Logout</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>AllStudentsList</servlet-name>
+        <servlet-class>Logic.Student.AllStudentsList</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AllStudentsList</servlet-name>
+        <url-pattern>/Logic.Student.AllStudentsList</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>AllFaculties</servlet-name>
+        <servlet-class>Logic.Faculty.AllFaculties</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AllFaculties</servlet-name>
+        <url-pattern>/Logic.Faculty.AllFaculties</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DeleteFaculty</servlet-name>
+        <servlet-class>Logic.Faculty.DeleteFaculty</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteFaculty</servlet-name>
+        <url-pattern>/Logic.Faculty.DeleteFaculty</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>Logic.Student.DeleteStudent</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/Logic.Student.DeleteStudent</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeleteSubject</servlet-name>
+        <servlet-class>Logic.Subject.DeleteSubject</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteSubject</servlet-name>
+        <url-pattern>/Logic.Subject.DeleteSubject</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>AllSubjects</servlet-name>
+        <servlet-class>Logic.Subject.AllSubjects</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AllSubjects</servlet-name>
+        <url-pattern>/Logic.Subject.AllSubjects</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>InsertFaculty</servlet-name>
+        <servlet-class>Logic.Faculty.InsertFaculty</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertFaculty</servlet-name>
+        <url-pattern>/Logic.Faculty.InsertFaculty</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>ShowStudentInformation</servlet-name>
+        <servlet-class>Logic.Student.ShowStudentInformation</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowStudentInformation</servlet-name>
+        <url-pattern>/Logic.Student.ShowStudentInformation</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>UpdateFaculty</servlet-name>
+        <servlet-class>Logic.Faculty.UpdateFaculty</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateFaculty</servlet-name>
+        <url-pattern>/Logic.Faculty.UpdateFaculty</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ShowFacultyInformation</servlet-name>
+        <servlet-class>Logic.Faculty.ShowFacultyInformation</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowFacultyInformation</servlet-name>
+        <url-pattern>/Logic.Faculty.ShowFacultyInformation</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>InsertSubject</servlet-name>
+        <servlet-class>Logic.Subject.InsertSubject</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertSubject</servlet-name>
+        <url-pattern>/Logic.Subject.InsertSubject</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UpdateSubject</servlet-name>
+        <servlet-class>Logic.Subject.UpdateSubject</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateSubject</servlet-name>
+        <url-pattern>/Logic.Subject.UpdateSubject</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>UpdateStudent</servlet-name>
+        <servlet-class>Logic.Student</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateStudent</servlet-name>
+        <url-pattern>/Logic.Student.UpdateStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSubjectToFaculty</servlet-name>
+        <servlet-class>Logic.Faculty.AddSubjectToFaculty</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddSubjectToFaculty</servlet-name>
+        <url-pattern>/Logic.Faculty.AddSubjectToFaculty</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>Check</servlet-name>
+        <servlet-class>Logic.Faculty.Check</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Check</servlet-name>
+        <url-pattern>/Logic.Faculty.Check</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>InsertSubjectToFaculty</servlet-name>
+        <servlet-class>Logic.InsertSubjectToFaculty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertSubjectToFaculty</servlet-name>
+        <url-pattern>/Logic.InsertSubjectToFaculty</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>InsertFacultyToStudent</servlet-name>
+        <servlet-class>Logic.InsertFacultyToStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertFacultyToStudent</servlet-name>
+        <url-pattern>/Logic.InsertFacultyToStudent</url-pattern>
+    </servlet-mapping>
+
+
+    InfrormationAboutFaculty
+
+
+    <servlet>
+        <servlet-name>InfrormationAboutFaculty</servlet-name>
+        <servlet-class>Logic.Student.InfrormationAboutFaculty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InfrormationAboutFaculty</servlet-name>
+        <url-pattern>/Logic.Student.InfrormationAboutFaculty</url-pattern>
+    </servlet-mapping>
+
+
+
+    <filter>
+        <filter-name>SetCharFilter</filter-name>
+        <filter-class>Logic.SetCharFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SetCharFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <!--<url-pattern>/*.jsp</url-pattern>-->
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>Logic.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/Logic.Subject.AllSubjects</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/Logic.Faculty.AllFaculties</url-pattern>
+    </filter-mapping>
+
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>InsertSubjectToStudent</servlet-name>
+        <servlet-class>Logic.InsertSubjectToStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertSubjectToStudent</servlet-name>
+        <url-pattern>/Logic.InsertSubjectToStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminFilter</servlet-name>
+        <servlet-class>Logic.AdminFilter</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminFilter</servlet-name>
+        <url-pattern>/Logic.AdminFilter</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CheckStateStudent</servlet-name>
+        <servlet-class>Logic.Student.CheckStateStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckStateStudent</servlet-name>
+        <url-pattern>/Logic.Student.CheckStateStudent</url-pattern>
+    </servlet-mapping>
+
+
+
+<!--deleteBlock    -->
+    <servlet>
+        <servlet-name>DeleteSubjectFromFaculty</servlet-name>
+        <servlet-class>Logic.DeleteSubjectFromFaculty</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteSubjectFromFaculty</servlet-name>
+        <url-pattern>/Logic.DeleteSubjectFromFaculty</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeleteFacultyFromStudent</servlet-name>
+        <servlet-class>Logic.DeleteFacultyFromStudent</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteFacultyFromStudent</servlet-name>
+        <url-pattern>/Logic.DeleteFacultyFromStudent</url-pattern>
+    </servlet-mapping>
+
+
+    <description>MySQL Test App</description>
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/TestDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>
